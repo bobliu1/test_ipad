@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>JS</title>
+    <STYLE>
+    </STYLE>
+    <script type="text/javascript">
+        window.onload = function ()
+        {
+            var main = document.getElementById ('main');
+            main.onkeyup = function ()
+            {
+                if (this.value.length > 30)
+                {
+                    alert ('超过字数');
+                    main.value = main.value.substring (0, 30);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<textarea rows="50" cols="50" id="main">
+        清新阡陌，交错恬静的乡间小路，青草离离；浅蓝篱笆，牵牛缠绕着季节的情节，恋上栅栏。盈盈盛夏，绿意温馨
+    </textarea>
+</body>
+</html>
