@@ -10,13 +10,18 @@
 </html>
 
 <script>
+console.log("开始！！！！！！！！")
 
 //ajax
     var data;
     window.onload=function getData(){
+console.log("window.onload！！！！！！！！")
         var xml=new XMLHttpRequest();
+console.log("新建一个XML！！！！！！！！")
         xml.open('get',"./json/text.json",false);
+console.log("open！！！！！！！！")
         xml.onreadystatechange=function(){
+console.log("onreadystatechange！！！！！！！！")
             if(xml.readyState===4&&/^2\d{2}$/.test(xml.status)){
                data=jsonParse(xml.responseText);
                 console.log(data)
@@ -26,5 +31,5 @@
     function jsonParse(str) {
         return flag ? JSON.parse(str) : eval('(' + str + ')');
     }
-
+console.log("结束！！！！！！！！")
 </script>
