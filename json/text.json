@@ -1,0 +1,6 @@
+[{
+  "person1":{"name":"lxx","sex":"1","age":"21","color":"red"},
+  "person2":{"name":"lm","sex":"1","age":"22","color":"red"},
+  "person3":{"name":"tc","sex":"0","age":"23","color":"red"},
+  "person4":{"name":"tb","sex":"0","age":"24","color":"red"}
+}]
